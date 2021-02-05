@@ -2,7 +2,7 @@ package frc.team2412.robot.subsystems;
 
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import frc.team2412.robot.subsystems.constants.IntakeConstants;
+import static frc.team2412.robot.subsystems.constants.IntakeConstants.*;
 
 public class IntakeSolenoidSubsystem extends SubsystemBase {
 	private final Solenoid intakeSolenoid;
@@ -12,11 +12,11 @@ public class IntakeSolenoidSubsystem extends SubsystemBase {
 	}
 
 	public void extend() {
-		setSolenoid(IntakeConstants.INTAKE_EXTEND);
+		setSolenoid(INTAKE_EXTEND);
 	}
 
 	public void retract() {
-		setSolenoid(IntakeConstants.INTAKE_RETRACT);
+		setSolenoid(INTAKE_RETRACT);
 	}
 
 	public void setSolenoid(boolean value) {
